@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Restore node modules
+        uses: actions/cache/restore@v4.2.0
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          fail-on-cache-miss: true
+      - name: Run tests
+        run: npm test
