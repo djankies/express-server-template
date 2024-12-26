@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "eamodio.gitlens",
+    "ms-azuretools.vscode-docker",
+    "vitest.explorer",
+    "aaron-bond.better-comments",
+    "expresssnippets.vscode-express-snippets"
+  ]
+}

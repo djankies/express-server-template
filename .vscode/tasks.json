@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "label": "Start Dev Server",
+      "detail": "Run development server with nodemon",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^.*$",
+          "file": 1,
+          "location": 2,
+          "message": 3
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*",
+          "endsPattern": "Server is running on port.*"
+        }
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "label": "Run Tests",
+      "detail": "Run all tests"
+    },
+    {
+      "type": "npm",
+      "script": "test:watch",
+      "label": "Watch Tests",
+      "detail": "Run tests in watch mode",
+      "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "test:coverage",
+      "label": "Test Coverage",
+      "detail": "Run tests with coverage report"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "label": "Lint Code",
+      "detail": "Run ESLint"
+    },
+    {
+      "type": "npm",
+      "script": "lint:fix",
+      "label": "Fix Lint Issues",
+      "detail": "Run ESLint with auto-fix"
+    },
+    {
+      "type": "npm",
+      "script": "format",
+      "label": "Format Code",
+      "detail": "Run Prettier formatter"
+    }
+  ]
+}

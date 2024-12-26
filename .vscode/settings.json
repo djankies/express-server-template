@@ -1,0 +1,143 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.rulers": [100],
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "coverage": true
+  },
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggestionActions.enabled": false,
+  "javascript.format.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "coverage": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "eslint.validate": ["javascript"],
+  "eslint.format.enable": true,
+  "eslint.run": "onType",
+  "eslint.lintTask.enable": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "markdown"
+  ],
+  "eslint.options": {
+    "overrideConfigFile": "eslint.config.js"
+  },
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "prettier.enable": false,
+  "prettier.requireConfig": true,
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "ehthumbs",
+    "eslintcache",
+    "Jankowski",
+    "jspm",
+    "mnpm",
+    "nuxt",
+    "pids",
+    "stylelintcache",
+    "usermod",
+    "vuepress",
+    "wscript"
+  ],
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["-l"],
+      "icon": "terminal"
+    },
+    "Dev Server": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm run dev"],
+      "icon": "rocket"
+    },
+    "Test Watch": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm run test:watch"],
+      "icon": "beaker"
+    },
+    "Test Coverage": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm run test:coverage"],
+      "icon": "graph"
+    },
+    "Lint": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm run lint:fix"],
+      "icon": "search"
+    },
+    "Format": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm run format"],
+      "icon": "paintcan"
+    },
+    "Install": {
+      "path": "/bin/bash",
+      "args": ["-l", "-c", "npm install"],
+      "icon": "package"
+    }
+  },
+  "terminal.integrated.env.osx": {
+    "NODE_ENV": "development"
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "MesloLGS NF, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.splitCwd": "workspaceRoot",
+  "terminal.integrated.scrollback": 10000
+}

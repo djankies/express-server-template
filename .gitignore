@@ -1,0 +1,93 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# OS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# Cache and temporary files
+.cache/
+.temp/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Package management
+.yarn/
+.pnp.*
+.npm/
+*.tgz
+.yarn-integrity
+
+# TypeScript
+*.tsbuildinfo
+
+# Miscellaneous
+.grunt/
+lib-cov/
+pids/
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+web_modules/
+.node_repl_history
+.tern-port
+.vscode-test
+
+# Project-specific (uncomment if needed)
+# public/
+# .cache/
+# .docusaurus
