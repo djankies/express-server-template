@@ -17,4 +17,4 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           fail-on-cache-miss: true
       - name: Run tests
-        run: npm test
+        run: npm test:run
