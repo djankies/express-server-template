@@ -14,6 +14,7 @@
     "dev": "NODE_ENV=development nodemon src/app.js",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
+    "test:run": "vitest run",
     "test:ui": "node scripts/open-vitest-ui.js & vitest --ui",
     "lint": "eslint . \"**/*.{js,md}\"",
     "lint:fix": "eslint . \"**/*.{js,md}\" --fix",
