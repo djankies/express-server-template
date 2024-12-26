@@ -6,6 +6,7 @@ import fs from 'fs';
 import helmet from 'helmet';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import RateLimit from 'express-rate-limit';
 import {
   apiLimiter,
   errorHandler,
@@ -42,7 +43,12 @@ export function createApp(options = {}) {
       : join(process.cwd(), 'public');
 
   // Custom middleware for handling range requests and conditional gets
-  app.use(async (req, res, next) => {
+  const fileAccessLimiter = RateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // max 100 requests per windowMs
+  });
+
+  app.use(fileAccessLimiter, async (req, res, next) => {
     const filePath = join(staticDir, req.path.replace(/^\//, ''));
 
     try {
